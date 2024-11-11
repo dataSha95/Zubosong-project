@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Engagement - Nizjungle Zubosongo</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="hero">
+        <h1>Community Engagement</h1>
+        <p>Stories, testimonials, and moments that define our village.</p>
+    </div>
+    <div class="section">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p>"Nizjungle Zubosongo has changed my life through their education programs."</p>
+                <h4>- Amina Begum</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Thanks to the health initiatives, my family has received the care we needed."</p>
+                <h4>- Rahim Uddin</h4>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Community Stories</h2>
+        <p>Read about the people and events that make our village special.</p>
+        <div class="stories">
+            <div class="story-card">
+                <h3>Women's Empowerment Workshop</h3>
+                <p>Our recent workshop empowered women to take leadership roles in the community.</p>
+            </div>
+            <div class="story-card">
+                <h3>Clean Water Initiative</h3>
+                <p>The new water wells have drastically improved health and hygiene in our village.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="{% static 'images/event1.jpg' %}" alt="Event 1">
+            <img src="{% static 'images/event2.jpg' %}" alt="Event 2">
+            <img src="{% static 'images/event3.jpg' %}" alt="Event 3">
+        </div>
+    </div>
+</body>
+</html>
