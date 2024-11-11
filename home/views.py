@@ -9,6 +9,11 @@ def about(request):
 def programs(request):
     return render(request, 'home/programs.html')
 
-
 def community(request):
-    return render(request, 'home/community.html') 
+    return render(request, 'home/community.html')
+
+def get_involved(request):
+    return render(request, 'home/get_involved.html')
+
+def contact(request):
+    return render(request, 'home/contact.html')

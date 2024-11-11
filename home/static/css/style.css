@@ -97,3 +97,87 @@ body {
     font-size: 0.9rem;
     color: #666;
 }
+
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+}
+.footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+.footer .footer-links li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.footer .footer-links li a:hover {
+    color: white;
+}
+
+
+
+/* Hover Effects for Buttons and Cards */
+.nav-links a:hover, .social-links a:hover {
+    color: #ffcc00; /* Change to a highlight color on hover */
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.back-to-top.show {
+    display: block;
+}

@@ -1,47 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Nizjungle Zubosongo</title>
-    {% load static %}
-<link rel="stylesheet" href="{% static 'css/style.css'%}">
-</head>
-<body>
-    <div class="hero">
-        <h1>About Nizjungle Zubosongo</h1>
+{% extends 'home/base.html' %}
+{% block title %}About Us - Nizjungle Zubosongo{% endblock %}
+{% block content %}
+<div class="about-hero">
+    <h1>About Nizjungle Zubosongo</h1>
+    <p>Learn more about our mission and vision.</p>
+</div>
+<div class="about-section">
+    <h2>Our Mission</h2>
+    <p>We aim to improve our community through education, social development, and poverty eradication.</p>
+</div>
+<div class="members">
+    <div class="member-card" data-aos="fade-up">
+        <h3>John Doe</h3>
+        <p>President</p>
     </div>
-    <div class="section">
-        <h2>Our Mission</h2>
-        <p>We are committed to improving our community through education, social development, and poverty eradication.</p>
+    <div class="member-card" data-aos="fade-up">
+        <h3>Jane Smith</h3>
+        <p>Secretary</p>
     </div>
-    <div class="section">
-        <h2>Our Vision</h2>
-        <p>To create a well-organized and progressive village that is compatible with the world and ensures a better future for all.</p>
-    </div>
-    <div class="section">
-        <h2>Core Values</h2>
-        <ul>
-            <li>Community First</li>
-            <li>Education for All</li>
-            <li>Empowerment and Sustainability</li>
-            <li>Transparency and Accountability</li>
-        </ul>
-    </div>
-    <div class="section">
-        <h2>Committee Members</h2>
-        <div class="members">
-            <div class="member-card">
-                <h3>John Doe</h3>
-                <p>Chairman</p>
-            </div>
-            <div class="member-card">
-                <h3>Jane Smith</h3>
-                <p>Secretary</p>
-            </div>
-            <!-- Add more member cards as needed -->
-        </div>
-    </div>
-</body>
-</html>
+</div>
+{% endblock %}
