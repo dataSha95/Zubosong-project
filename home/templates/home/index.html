@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizjungle Zubosongo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* Basic Styles for Now */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .events, .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Nizjungle Zubosongo</h1>
+        <p>Connecting our village and creating a brighter future together.</p>
+    </div>
+    <div class="section">
+        <h2>About Our Organization</h2>
+        <p>Nizjungle Zubosongo is dedicated to improving our community through education, social development, and poverty eradication.</p>
+    </div>
+    <div class="section">
+        <h2>Featured Events & Announcements</h2>
+        <div class="events">
+            <div class="card">
+                <h3>Community Meeting</h3>
+                <p>Join us for a village-wide meeting on November 20th to discuss future projects.</p>
+            </div>
+            <div class="card">
+                <h3>Fundraising Drive</h3>
+                <p>Support our upcoming fundraiser to improve local infrastructure.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Recent Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>School Renovation</h3>
+                <p>We successfully renovated our primary school, providing a better learning environment.</p>
+            </div>
+            <div class="card">
+                <h3>Water Well Project</h3>
+                <p>Installed new water wells to ensure clean drinking water for everyone.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
